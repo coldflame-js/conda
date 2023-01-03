@@ -27,3 +27,5 @@ One workflow to resolve this on macOS is:
 * For a quick check, set your shell to acknowledge the certificate: ``export REQUESTS_CA_BUNDLE=/path/to/converted/certificate.pem``
 * To set this permanently, open your shell profile (e.g. ``.bashrc`` or ``.zshrc``) and add this line: ``export REQUESTS_CA_BUNDLE=/path/to/converted/certificate.pem.``
   Now exit your terminal/shell and reopen. Check again.
+
+Note: Be aware, that there should be all certificates of the certificate chain in the CA bundle, not just the trusted roots.
